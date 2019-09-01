@@ -1,7 +1,8 @@
 Blockly.Blocks['t_watch_button_setup'] = {
   init: function() {
     this.appendDummyInput()
-        .appendField("Button sensor kits of T-Watch");
+        .appendField("Button setup pin")
+        .appendField(new Blockly.FieldNumber(21), "PIN");
     this.setPreviousStatement(true, null);
     this.setNextStatement(true, null);
     this.setColour(195);

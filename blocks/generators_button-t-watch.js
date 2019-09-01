@@ -1,5 +1,6 @@
 Blockly.JavaScript['t_watch_button_setup'] = function(block) {
-  var code = `#SETUPpinMode(21, INPUT_PULLUP);#END`;
+  var number_pin = block.getFieldValue('PIN');
+  var code = `#SETUPpinMode(${number_pin}, INPUT_PULLUP);#END`;
   return code;
 };
 
